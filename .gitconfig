@@ -1,0 +1,7 @@
+[user]
+	name = Thomas Craggs
+	email = Thomas.Craggs@city.ac.uk
+[email]
+	address = Thomas.Craggs@city.ac.uk
+[init]
+	defaultBranch = main
