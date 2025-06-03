@@ -1,0 +1,127 @@
+{
+    "$schema": "~/.config/fastfetch/json-schema.json",
+    "logo": {
+        "height": 15,
+        "width": 30,
+        "padding": {
+            "top": 3,
+            "left": 3
+        },
+
+        "color":{"1":"blue", "2":"blue"}
+
+    },
+
+    "display": {
+        "separator": " ",
+    },
+
+    "modules": [
+
+        "break",
+
+        {
+            "type": "title",
+            "color":{
+                "user": "blue",
+                "host": "blue",
+            }
+        },
+
+        "break",
+
+        {
+            "type": "host",
+            "key": "PC",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": " ├",
+            "showPeCoreCount": true,
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": " ├",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": " ├",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": " └",
+            "keyColor": "green"
+        },
+
+        "break",
+
+        {
+            "type":"os",
+            "key": "OS",
+            "keyColor": "\u001b[38;2;255;165;0m"
+        },
+        {
+            "type": "kernel",
+            "key": " ├",
+            "keyColor": "\u001b[38;2;255;165;0m"
+        },
+        {
+            "type": "packages",
+            "key": " ├",
+            "keyColor": "\u001b[38;2;255;165;0m"
+        },
+        {
+            "type": "shell",
+            "key": " └",
+            "keyColor": "\u001b[38;2;255;165;0m"
+        },
+        "break",
+        {
+            "type": "de",
+            "key": "DE",
+            "keyColor": "\u001b[38;2;255;105;180m"
+        },
+        {
+            "type": "lm",
+            "key": " ├",
+            "keyColor": "\u001b[38;2;255;105;180m"
+        },
+        {
+            "type": "wm",
+            "key": " ├",
+            "keyColor": "\u001b[38;2;255;105;180m"
+        },
+        {
+            "type": "wmtheme",
+            "key": " ├",
+            "keyColor": "\u001b[38;2;255;105;180m"
+        },
+        {
+            "type": "gpu",
+            "key": " └",
+            "format": "{3}",
+            "keyColor": "\u001b[38;2;255;105;180m"
+        },
+
+        "break",
+
+        {
+            "type": "command",
+            "key": "OS Age ",
+            "keyColor": "magenta",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": "Uptime ",
+            "keyColor": "magenta"
+        },
+
+        "break",
+        "break",
+    ]
+}
